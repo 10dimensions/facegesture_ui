@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Camera selection</title>
+
+  <style type="text/css">
+    body{
+                      min-height: 100%;
+                      overflow: hidden;
+              width: 100%;
+              overflow-y: hidden;
+              }
+              main {
+                      visibility: hidden;
+                      position: absolute;
+                      z-index: 0;
+              }
+              #game-area {
+                      position: absolute;
+                      width: 50vw;
+                      height: 60vh;
+                      display: block;
+                      background: red;
+                      top: 20vh;
+                      left: 50%;
+                      margin-left: -25vw;
+
+              }
+              #game-area canvas {
+                      max-width: 100%;
+              }
+               /*@media only screen and (max-width: 600px) {
+                       #game-area {
+                      position: absolute;
+                      width: 100vw!important;
+                      height: 60vh!important;
+                      display: block;
+                      background: red;
+                      top: 20vh;
+                      left: 0;
+                      margin-left: 0!important;
+
+              }} */
+
+    </style>
+</head>
+<body>
+        <div id="output">"hello"</div>
+<main>
+
+    <div class="controls">
+        <button id="snap" >Snap Photo</button>
+        <button id="button">Get camera</button>
+        </select>
+      </div>
+
+      <video id="video"  autoplay playsinline width="320" height="240"></video>
+      <canvas id="canvas" width="320" height="240"></canvas>
+
+</main>
+</body>
+
+<script type="text/javascript" src="./phaser/phaser.min.js"></script>
+<script type="text/javascript" src="./js/global.js"></script>
+<script src="js/clmtrackr.js"></script>
+<script type="text/javascript" src="./js/cam.js"></script>
+<script type="text/javascript" src="./js/utils.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+
+<script type="text/javascript" src="./js/game.js"></script>
+<!-- 
+-->
+
+
+
+</html>
